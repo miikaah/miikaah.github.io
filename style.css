@@ -155,7 +155,7 @@ section {
   }
 
   .project {
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 30px auto;
     grid-template-columns: unset;
   }
 
