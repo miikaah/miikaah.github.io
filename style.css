@@ -1,0 +1,167 @@
+:root {
+  --font-size-md: 18px;
+  --font-size-sm: 16px;
+  --font-size-xs: 14px;
+  --font-size-xxs: 12px;
+  --color-white: #fbfbfb;
+  --color-black: #000;
+}
+
+html {
+  color: var(--color-white);
+  background: rgb(33, 37, 43);
+}
+
+a {
+  color: var(--color-typography);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: Verdana, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+select {
+  font-family: Verdana, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button:disabled {
+  opacity: 0.666;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 20px 0;
+}
+
+h5,
+h6 {
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+input {
+  padding: 10px 30px;
+  font-size: var(--font-size-md);
+}
+
+textarea {
+  padding: 10px 30px;
+  font-size: var(--font-size-md);
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin: 4px 0;
+}
+
+#root {
+  max-width: 920px;
+  margin: 40px auto;
+}
+
+section {
+  margin-bottom: 92px;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.job-title {
+  margin-bottom: 8px;
+}
+
+.intro {
+  margin: 46px 0 92px;
+}
+
+.employer {
+  margin-bottom: 23px;
+}
+
+.employer > h4 {
+  margin: 0;
+}
+
+.date {
+  font-size: var(--font-size-xs);
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  margin-bottom: 40px;
+}
+
+.project-description > h4 {
+  margin-bottom: 30px;
+}
+
+.project-description > p {
+  margin-bottom: 36px;
+}
+
+.tags {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.tags > span {
+  font-size: var(--font-size-xxs);
+  border: 1px solid var(--color-white);
+  border-radius: 28px;
+  padding: 6px;
+  margin: 0 4px 4px 0;
+}
+
+.education,
+.languages > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 920px) {
+  #root {
+    max-width: 95%;
+  }
+
+  .project {
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: unset;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
