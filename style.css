@@ -8,8 +8,8 @@
 }
 
 html {
-  color: var(--color-white);
-  background: rgb(33, 37, 43);
+  color: var(--color-black);
+  background: var(--color-white);
 }
 
 a {
@@ -137,7 +137,7 @@ section {
 
 .tags > span {
   font-size: var(--font-size-xxs);
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-black);
   border-radius: 28px;
   padding: 6px;
   margin: 0 4px 4px 0;
